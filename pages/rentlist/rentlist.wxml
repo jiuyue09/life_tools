@@ -1,0 +1,27 @@
+<!-- pages/rentlist/rentlist.wxml -->
+<view style="width:100%;min-height:100vh;background:#f3f5f7" hover-class="none" hover-stop-propagation="false">
+    <view wx:if="{{is_show_data}}">
+        <view class="no_data_style" wx:if='{{!total_data.length}}'>暂无租借记录</view>
+        <view wx:else style="background:#f3f5f7">
+            <view class="list_bg {{item.is_rent?'':'active'}}" wx:key="*this" wx:for="{{total_data}}" catch:tap="funcGoToReturn" data-info="{{item}}" hover-class="none" hover-stop-propagation="false">
+                <view class="list_left">
+                    <view class="list_left_top" hover-class="none" hover-stop-propagation="false">
+                        <label>{{item.rent_name}}</label>
+                        <label style="margin-left:40rpx">{{item.rent_tel}}</label>
+                    </view>
+                    <view class="list_left_bottom" hover-class="none" hover-stop-propagation="false">
+                        <label>{{item.user_shops}}</label>
+                    </view>
+                </view>
+                <view class="list_right" hover-class="none" hover-stop-propagation="false">
+                    <label wx:if="{{item.is_rent}}">已归还</label>
+                    <label wx:else>未归还</label>
+                </view>
+            </view>
+            <view class="weui-loadmore">
+                <view wx:if="{{!is_bottom}}" class="weui-loading"></view>
+                <view class="weui-loadmore__tips">{{is_bottom?"已经到底啦":"正在加载..."}}</view>
+            </view>
+        </view>
+    </view>
+</view>

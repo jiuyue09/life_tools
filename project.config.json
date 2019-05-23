@@ -1,0 +1,95 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wxb3ad285a22be1b98",
+	"projectname": "life_tools",
+	"cloudfunctionRoot": "cloudfunc/",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": 0,
+					"name": "首页",
+					"pathName": "pages/rentlist/rentlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提醒成功页面",
+					"pathName": "pages/remind/success/success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "失败页面",
+					"pathName": "pages/remind/warn/warn",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "租借首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "退还钥匙",
+					"pathName": "pages/returnDetail/returnDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "管理页面",
+					"pathName": "pages/manage/manage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "查询结果页面",
+					"pathName": "pages/manage/queryResult/queryResult",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

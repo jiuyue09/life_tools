@@ -1,0 +1,30 @@
+.list_bg {
+    padding:20rpx;
+    color: #999;
+    background: #fff;
+    display: flex;
+    font-size: 30rpx;
+    justify-content: space-between;
+    height: 100rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.list_left {
+    
+}
+.list_left_top {
+
+}
+
+.list_left_bottom {
+    margin-top: 10rpx;
+}
+
+.active {
+    color: #333;
+}
+
+.list_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

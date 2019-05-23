@@ -1,0 +1,12 @@
+<view style="height:100vh;background:#f3f5f7;width:100%" hover-class="none" hover-stop-propagation="false">
+    <view class='cell' bind:tap="querydata" id='0'>
+        查询所有记录
+    </view>
+     <view class='cell' bind:tap="querydata" id='1'>
+        查询未归还记录
+    </view>
+     <view class="cell" bind:tap="querydata" id='2'>
+        查询当天记录
+    </view>
+</view>
+

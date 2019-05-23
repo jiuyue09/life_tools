@@ -1,0 +1,44 @@
+<!-- index.wxml -->
+<view class="userinfo">
+  <form bindsubmit="funcSubmit">
+    <view class="bgview">
+      <label class="title" for="">姓名：</label>
+      <input name="name" class="content" type="text" placeholder-class="input-placeholder" placeholder="请输入租借人姓名" value="李四"></input>
+    </view>
+    <view class="bgview">
+      <label class="title" for="">手机号码：</label>
+      <input name="tel" class="content" type="number" placeholder-class="input-placeholder" placeholder="请输入联系手机号"></input>
+    </view>
+    <view class="bgview">
+      <label class="title" for="">所在门店：</label>
+      <input name="shops" class="content" type="text" placeholder-class="input-placeholder" placeholder="请输入门店名称"></input>
+    </view>
+    <button class="rent" type="primary" form-type="submit">确认租借</button>
+  </form>
+  
+  <!-- <view class="bgview">
+        <label class="title" for="">姓名：</label>
+        <input class="content" type="text" placeholder-class="input-placeholder" >
+        </input>
+  </view>
+   <view class="bgview">
+        <label class="title" for="">姓名：</label>
+        <input class="content" type="text" placeholder-class="input-placeholder" >
+        </input>
+  </view>
+   <view class="bgview">
+        <label class="title" for="">姓名：</label>
+        <input class="content" type="text" placeholder-class="input-placeholder" >
+        </input>
+  </view> -->
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

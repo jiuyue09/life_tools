@@ -1,0 +1,12 @@
+/* pages/manage/manage.wxss */
+
+.cell {
+    padding:20rpx;
+    line-height:48rpx;
+    color:#333;
+    background:#fff;
+    height:88rpx;
+    font-size: 26rpx;
+    box-sizing: border-box;
+    border-bottom: 2rpx #eeeeee solid;
+}

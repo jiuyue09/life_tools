@@ -1,0 +1,9 @@
+<!--pages/home/home.wxml-->
+<view style="width:100%;height:100vh;background:#f3f5f7" class="bgView" hover-class="none" hover-stop-propagation="false">
+    <view class="" hover-class="none" hover-stop-propagation="false">
+        <!-- <button type='primary' style="width:710rpx;height:88rpx;" open-type="getPhoneNumber" bindgetphonenumber="funcGetPhone">租借</button> -->
+        <button type='primary' style="width:710rpx;height:88rpx;" bindtap='rendkey'>租借</button>
+        <button type='primary' style="width:710rpx;height:88rpx;margin-top:40rpx;" bindtap='returnKey'>归还</button>
+        <button type='primary' style="width:710rpx;height:88rpx;margin-top:40rpx;" bindtap='rentList'>查看租借记录</button>
+    </view>
+</view>
