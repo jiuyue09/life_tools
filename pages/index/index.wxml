@@ -3,7 +3,7 @@
   <form bindsubmit="funcSubmit">
     <view class="bgview">
       <label class="title" for="">姓名：</label>
-      <input name="name" class="content" type="text" placeholder-class="input-placeholder" placeholder="请输入租借人姓名" value="李四"></input>
+      <input name="name" class="content" type="text" placeholder-class="input-placeholder" placeholder="请输入租借人姓名"></input>
     </view>
     <view class="bgview">
       <label class="title" for="">手机号码：</label>
