@@ -11,6 +11,9 @@
                     </view>
                     <view class="list_left_bottom" hover-class="none" hover-stop-propagation="false">
                         <label>{{item.user_shops}}</label>
+                        <view style="margin-top:10rpx">
+                            {{item.key_address}}
+                        </view>
                     </view>
                 </view>
                 <view class="list_right" hover-class="none" hover-stop-propagation="false">

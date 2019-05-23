@@ -7,9 +7,13 @@
                     <view class="list_left_top" hover-class="none" hover-stop-propagation="false">
                         <label>{{item.rent_name}}</label>
                         <label style="margin-left:40rpx">{{item.rent_tel}}</label>
+                        <label style="margin-left:40rpx">{{item.sys_num}}</label>
                     </view>
                     <view class="list_left_bottom" hover-class="none" hover-stop-propagation="false">
                         <label>{{item.user_shops}}</label>
+                        <view style="margin-top:10rpx">
+                            {{item.key_address}}
+                        </view>
                     </view>
                 </view>
                 <view class="list_right" hover-class="none" hover-stop-propagation="false">

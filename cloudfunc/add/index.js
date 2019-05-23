@@ -29,16 +29,21 @@ exports.main = async (event, context) => {
     let time = new Date();
     let formatTime_serverTime = formatTime(time);
     let timeInt = new Date().getTime();
+    let params = {
+      'rent_name':event.rent_name,
+      'user_shops':event.user_shops,
+      'rent_tel':event.rent_tel,
+      'key_address':event.key_address,
+      'rent_shops':'黄河南路城铁店',
+      'rent_time':formatTime_serverTime,
+      '_openid':OPENID,
+      'rent_time_float':timeInt,
+      'is_rent':false
+    };
+    if (event.sys_num && event.sys_num != '') {
+      params.sys_num = event.sys_num;
+    }
     return await db.collection('rentKey').add({
-      data:{
-        'rent_name':event.rent_name,
-        'user_shops':event.user_shops,
-        'rent_tel':event.rent_tel,
-        'rent_shops':'黄河南路城铁店',
-        'rent_time':formatTime_serverTime,
-        '_openid':OPENID,
-        'rent_time_float':timeInt,
-        'is_rent':false
-      }
+      data:params
     })
 }

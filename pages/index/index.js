@@ -40,12 +40,20 @@ Page({
       this.funcToast('请输入租借人所属门店');
       return;
     }
+    let address = e.detail.value.address;
+    if (!address || address == '') {
+      this.funcToast('请输入钥匙所属物业');
+      return;
+    }
+    let sys_num = e.detail.value.sys_num;
     wx.cloud.callFunction({
       name: 'add',
       data: {
         'rent_name':name,
         'user_shops':shops,
         'rent_tel':tel,
+        'key_address':address,
+        'sys_num':sys_num
       }
     }).then(res => {
       console.log(res);

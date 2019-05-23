@@ -13,6 +13,14 @@
       <label class="title" for="">所在门店：</label>
       <input name="shops" class="content" type="text" placeholder-class="input-placeholder" placeholder="请输入门店名称"></input>
     </view>
+    <view class="bgview">
+      <label class="title" for="">所属物业：</label>
+      <input name="address" class="content" type="text" placeholder-class="input-placeholder" placeholder="请输入钥匙所在物业"></input>
+    </view>
+    <view class="bgview">
+      <label class="title" for="">系统号：</label>
+      <input name="sys_num" class="content" type="number" placeholder-class="input-placeholder" placeholder="非必填"></input>
+    </view>
     <button class="rent" type="primary" form-type="submit">确认租借</button>
   </form>
   
