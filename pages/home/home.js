@@ -12,12 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    let _this = this;
     wx.cloud.callFunction({
       name: 'rootManage',
     }).then(res => {
       console.log(res);
-      this.setData({
-        is_root:res
+      _this.setData({
+        is_root:res.result
       });
     }).catch(error => {
       console.log(error);
