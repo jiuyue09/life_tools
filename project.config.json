@@ -20,6 +20,8 @@
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -38,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 6,
+			"current": 7,
 			"list": [
 				{
 					"id": 0,
@@ -69,10 +71,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 4,
 					"name": "退还钥匙",
-					"pathName": "pages/returnDetail/returnDetail",
-					"query": "",
+					"pathName": "pages/rentlist/rentlist",
+					"query": "shopFlag=1000",
 					"scene": null
 				},
 				{
@@ -86,6 +88,13 @@
 					"id": -1,
 					"name": "查询结果页面",
 					"pathName": "pages/manage/queryResult/queryResult",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "退还钥匙",
+					"pathName": "pages/login/login",
 					"query": "",
 					"scene": null
 				}

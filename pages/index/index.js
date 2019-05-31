@@ -8,7 +8,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    shopFlag:''
   },
   //事件处理函数
   bindViewTap: function () {
@@ -16,11 +17,18 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
-  
+  onLoad: function (options) {
+      this.data.shopFlag = options.shopFlag;
   },
 
   funcSubmit: function (e) {
+    if (this.data.shopFlag != '1000') {
+      wx.showToast({
+        title: '请去门店借用钥匙',
+        icon: 'none',
+      });
+      return
+    }
     let name = e.detail.value.name;
     if (!name || name == '') {
       this.funcToast('请输入租借人姓名');

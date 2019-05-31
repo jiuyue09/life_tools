@@ -10,12 +10,14 @@ Page({
     page_size: 10,
     page_index: 0,
     is_bottom: false,
+    shopFlag:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.data.shopFlag = options.shopFlag;
     this.funcClearData();
     wx.showLoading({
       title: '加载中...',
@@ -94,6 +96,14 @@ Page({
   },
 
   funcUpdateKeyRecoard(info) {
+    if (this.data.shopFlag != '1000') {
+      wx.showToast({
+        title: '请去门店归还钥匙',
+        icon: 'none'
+      })
+      return;
+    }
+
     let info_id = info._id;
     const db = wx.cloud.database();
     const myTodo = db.collection('rentKey').doc(info_id);
